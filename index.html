@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor Especial para Mi Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo animado -->
+    <div class="cielo">
+        <div class="sol"></div>
+        <div class="nube nube1"></div>
+        <div class="nube nube2"></div>
+        <div class="nube nube3"></div>
+        <div class="abeja abeja1"></div>
+        <div class="abeja abeja2"></div>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="jardin">
+        <!-- Maceta y planta -->
+        <div class="maceta"></div>
+        <div class="planta-container">
+            <div class="planta" id="planta"></div>
+            <div class="malas-hierbas" id="malas-hierbas"></div>
+        </div>
+
+        <!-- Efectos -->
+        <div class="efecto-agua" id="efecto-agua"></div>
+        <div class="efecto-sol" id="efecto-sol"></div>
+    </div>
+
+    <!-- Barras de progreso -->
+    <div class="progreso-container">
+        <div class="barra-cute">
+            <div class="barra-titulo">💖 Estado Diario</div>
+            <div class="barra" id="barra-estado">
+                <div class="relleno" id="relleno-estado"></div>
+            </div>
+        </div>
+        
+        <div class="barra-cute">
+            <div class="barra-titulo">🌷 Progreso Total</div>
+            <div class="barra" id="barra-progreso">
+                <div class="relleno" id="relleno-progreso"></div>
+            </div>
+            <div class="dias-counter">Día: <span id="dia-actual">1</span>/7</div>
+        </div>
+    </div>
+
+    <!-- Controles -->
+    <div class="controles">
+        <button class="control-btn" id="regar-btn">
+            <span style="font-size: 24px;">💧</span>
+            <span>Regar</span>
+        </button>
+        
+        <button class="control-btn" id="sol-btn">
+            <span style="font-size: 24px;">☀️</span>
+            <span>Dar Sol</span>
+        </button>
+        
+        <button class="control-btn" id="hierbas-btn">
+            <span style="font-size: 24px;">🌱</span>
+            <span>Limpiar</span>
+        </button>
+    </div>
+
+    <!-- Utilidades -->
+    <div class="utilidades">
+        <button class="util-btn" id="foto-btn">
+            <span style="font-size: 24px;">📸</span>
+        </button>
+        
+        <button class="util-btn" id="reiniciar-btn">
+            <span style="font-size: 24px;">🔄</span>
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal-reinicio">
+        <div class="modal-content">
+            <h3>¿Quieres desplantar tu flor?</h3>
+            <p>Esta acción no se puede deshacer</p>
+            <div class="modal-buttons">
+                <button class="btn-si" id="confirmar-reinicio">Sí</button>
+                <button class="btn-no" id="cancelar-reinicio">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mensajes -->
+    <div class="mensajes" id="mensajes"></div>
+
+    <script src="script.js"></script>
+
+  
+</script>
+</body>
+</html>
